@@ -11,7 +11,88 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+		 <style>
+    body {
+      background: linear-gradient(135deg, #fdfdfd, #e6f2ff);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    section {
+      background-color: #ffffff;
+      padding: 2em;
+      margin: 2em auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      max-width: 960px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 102, 204, 0.2);
+    }
+    h2 {
+      color: #0066cc;
+      font-size: 1.75em;
+    }
+    a.button, ul.actions .button {
+      background-color: #0066cc !important;
+      border-radius: 30px;
+      padding: 0.6em 1.4em;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #004999 !important;
+      transform: scale(1.05);
+    }
+    img.project-image {
+      border-radius: 6px;
+      margin-bottom: 1em;
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    img.project-image:hover {
+      transform: scale(1.02);
+    }
+    header#header {
+      text-align: center;
+      padding: 2em 1em;
+    }
+    header#header h1 {
+      color: #333;
+      font-size: 2.4em;
+      margin-bottom: 0.2em;
+      animation: fadeInDown 1s ease;
+    }
+    header#header p {
+      color: #666;
+      font-size: 1.1em;
+      animation: fadeInUp 1s ease;
+    }
+    footer#footer {
+      text-align: center;
+      margin-top: 3em;
+      padding-top: 2em;
+      border-top: 1px solid #e0e0e0;
+    }
+    footer#footer a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    footer#footer a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+	
 	<body class="is-preload">
 
 		<!-- Wrapper -->
