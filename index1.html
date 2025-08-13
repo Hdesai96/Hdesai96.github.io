@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harshni Desai - Data Analyst Portfolio</title>
+  <style>
+    /* ===== General Styles ===== */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #ffffff;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    img { max-width: 100%; display: block; }
+    h1, h2, h3, h4 { margin-top: 0; }
+    
+    /* ===== Header ===== */
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: #f8f9fa;
+      animation: fadeIn 1s ease-in-out;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 15px 8px 0;
+      background: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #005fa3;
+      transform: translateY(-2px);
+    }
+
+    /* ===== Sections ===== */
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0077cc;
+    }
+
+    /* ===== Projects ===== */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+    .project-card .content {
+      padding: 15px;
+    }
+    .project-card h3 {
+      margin-top: 0;
+      color: #0077cc;
+    }
+
+    /* ===== Skills ===== */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .skill-box {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    .skill-box:hover {
+      background: #eaf3fc;
+    }
+
+    /* ===== About ===== */
+    .about {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+    .about img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* ===== Contact ===== */
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background: #f8f9fa;
+      color: #777;
+    }
+
+    /* ===== Animations ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Harshni Desai</h1>
+    <p>Data Analyst & Sustainability Advocate | Turning Data into Business Impact</p>
+    <a href="resume.pdf" class="btn">View Resume</a>
+    <a href="#contact" class="btn">Contact Me</a>
+  </header>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Business Sales Dashboard">
+        <div class="content">
+          <h3>Business Sales Dashboard</h3>
+          <p>Interactive Power BI dashboard tracking KPIs like revenue, profit margins, and top products to drive sales strategy.</p>
+          <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Customer Churn Prediction">
+        <div class="content">
+          <h3>Customer Churn Prediction</h3>
+          <p>Machine learning model in Python to predict churn and identify key drivers, improving retention strategies.</p>
+          <a href="https://github.com/yourusername/project2" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/project3.jpg" alt="Carbon Emissions Tracker">
+        <div class="content">
+          <h3>Carbon Emissions Tracker</h3>
+          <p>Tableau dashboard analyzing CO₂ emissions trends and renewable energy adoption across countries.</p>
+          <a href="https://github.com/yourusername/project3" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h4>Data Analytics</h4>
+        <p>Python, R, SQL, Excel</p>
+      </div>
+      <div class="skill-box">
+        <h4>Visualization</h4>
+        <p>Power BI, Tableau, Matplotlib, Seaborn</p>
+      </div>
+      <div class="skill-box">
+        <h4>Data Engineering</h4>
+        <p>MySQL, ETL, Data Warehousing</p>
+      </div>
+      <div class="skill-box">
+        <h4>Sustainability</h4>
+        <p>Carbon Audits, Circular Economy Analysis</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <img src="images/profile.jpg" alt="Harshni Desai">
+      <p>I am a Data Analyst with a passion for sustainability, specializing in transforming data into actionable insights. With expertise in Python, SQL, and BI tools, I help businesses make informed, impactful decisions. My experience includes carbon audit reporting, waste-to-product innovations, and advanced analytics solutions.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Harshni Desai. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Section fade-in on scroll
+    const sections = document.querySelectorAll('section');
+    const revealOnScroll = () => {
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          section.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+
+</body>
+</html>
