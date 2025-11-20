@@ -1,262 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Harshni Desai - Data Analyst Portfolio</title>
-  <style>
-    /* ===== General Styles ===== */
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      background: #ffffff;
-      color: #333;
-      line-height: 1.6;
-      scroll-behavior: smooth;
-    }
-    img { max-width: 100%; display: block; }
-    h1, h2, h3, h4 { margin-top: 0; }
-    
-    /* ===== Header ===== */
-    header {
-      padding: 80px 20px;
-      text-align: center;
-      background: #f8f9fa;
-      animation: fadeIn 1s ease-in-out;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #666;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 15px 8px 0;
-      background: #0077cc;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: all 0.3s ease;
-    }
-    .btn:hover {
-      background: #005fa3;
-      transform: translateY(-2px);
-    }
-
-    /* ===== Sections ===== */
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 40px;
-      color: #0077cc;
-    }
-
-    /* ===== Projects ===== */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .project-card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      background: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-    }
-    .project-card .content {
-      padding: 15px;
-    }
-    .project-card h3 {
-      margin-top: 0;
-      color: #0077cc;
-    }
-
-    /* ===== Skills ===== */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      text-align: center;
-    }
-    .skill-box {
-      background: #f8f9fa;
-      padding: 20px;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-    }
-    .skill-box:hover {
-      background: #eaf3fc;
-    }
-
-    /* ===== About ===== */
-    .about {
-      text-align: center;
-      max-width: 800px;
-      margin: auto;
-    }
-    .about img {
-  width: 150px;
-  height: 150px;
-  border-radius: 0;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  object-fit: cover;
-  display: block;
-  margin: 0 auto; 
-}
-
-
-    /* ===== Contact ===== */
-    .contact {
-      text-align: center;
-    }
-    .contact a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    .contact a:hover {
-      text-decoration: underline;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      background: #f8f9fa;
-      color: #777;
-    }
-
-    /* ===== Animations ===== */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Hero Section -->
-  <header>
-    <h1>Harshni Desai</h1>
-    <p>Master’s student in Data Analytics and Information Systems at Texas State University, and recipient of the Graduate Merit Fellowship. Skilled in Python, MySQL, RStudio, and Power BI, with a passion for turning data into actionable insights</p>
-    <a href="https://github.com/Hdesai96/Hdesai96Portfolio/blob/main/Harshni%20Desai.%20Resume.pdf" class="btn">View Resume</a>
-    <a href="https://www.linkedin.com/in/harshni-desai-b57529149/" class="btn">Contact Me</a>
-  </header>
-
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <img src="Image.png" alt="Data Cleaning in MySQL">
-        <div class="content">
-          <h3>Data Cleaning in MySQL</h3>
-          <p>Data cleaning is a crucial step in any data analysis or data science project. It involves identifying and correcting (or removing) inaccurate records, handling missing values, and ensuring data consistency and accuracy. In this project, the focus was on cleaning a housing dataset using MySQL Server, a relational database management system that provides robust tools for data manipulation and management..</p>
-          <a href="https://github.com/Hdesai96/Hdesai96Portfolio/blob/main/Data%20Cleaning%20on%20Housing%20Data%20using%20MySQL.txt" target="_blank">View Project</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="Image2.png" alt="Instacart Data Exploration">
-        <div class="content">
-          <h3>Data Exploration in Python</h3>
-          <p>This project focuses on exploratory data analysis of the Instacart Market Basket dataset, which contains over 3 million anonymized grocery orders from 200,000+ users. Using Python in Jupyter Notebooks, I examined ordering patterns, popular products, and trends by time of day and week to uncover key customer purchasing behaviors.</p></p>
-        </P>    <a href="https://github.com/Hdesai96/instacart/blob/main/instacart%20(1).ipynb" target="_blank">View Project</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="Image3.png" alt="Student performance Project">
-        <div class="content">
-          <h3>Student performance Project</h3>
-          <p>The objective of this project is to develop a predictive model that forecasts a student’s final grade based on factors such as study habits, family background, and demographic details. This model aims to provide educational institutions with valuable insights into the key predictors of academic success. By accurately identifying students at risk of underperforming, institutions can implement targeted support strategies to improve student outcomes, such as personalized tutoring, counseling, and family outreach programs.</p>
-          <a href="https://github.com/Hdesai96/Hdesai96Portfolio/blob/main/Student_Performance_Data_FinalProject.ipynb" target="_blank">View Project</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-box">
-        <h4>Data Analytics</h4>
-        <p>Python, R, SQL, Excel</p>
-      </div>
-      <div class="skill-box">
-        <h4>Visualization</h4>
-        <p>Power BI, Tableau, Matplotlib, Seaborn</p>
-      </div>
-      <div class="skill-box">
-        <h4>Data Engineering</h4>
-        <p>MySQL, ETL, Data Warehousing</p>
-      </div>
-      <div class="skill-box">
-        <h4>Sustainability</h4>
-        <p>Carbon Audits, Circular Economy Analysis</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="about">
-    <img src="image1" alt="Harshni Desai">
-
-      <p>I am a Data Analyst with a passion for sustainability, specializing in transforming data into actionable insights. With expertise in Python, SQL, and BI tools, I help businesses make informed, impactful decisions. My experience includes carbon audit reporting, waste-to-product innovations, and advanced analytics solutions.</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact">
-      <p>Email: <a href="desai.harshni.d@gmail.com">desai.harshni.d@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/harshni-desai-b57529149/" target="_blank">https://www.linkedin.com/in/harshni-desai/</a></p>
-      <p>GitHub: <a href="https://github.com/Hdesai96/Hdesai96Portfolio" target="_blank">github.com/Hdesai96</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Harshni Desai. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // Section fade-in on scroll
-    const sections = document.querySelectorAll('section');
-    const revealOnScroll = () => {
-      sections.forEach(section => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-          section.classList.add('visible');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshni Desai | Data Analyst Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #2563eb, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-      });
-    };
-    window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll();
-  </script>
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-xl font-bold text-slate-800">HD.</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-blue-600 transition">About</a>
+                    <a href="#skills" class="text-slate-600 hover:text-blue-600 transition">Skills</a>
+                    <a href="#projects" class="text-slate-600 hover:text-blue-600 transition">Projects</a>
+                    <a href="mailto:desai.harshni.d@gmail.com" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white border-b border-slate-100" id="about">
+        <div class="max-w-6xl mx-auto px-4 py-20 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="gradient-text">Harshni Desai</span></h1>
+                <h2 class="text-xl md:text-2xl text-slate-500 mb-6">Data Analyst & Information Systems Specialist</h2>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    I transform raw data into actionable insights. Master’s student at Texas State University (Graduate Merit Fellow) with expertise in Python, SQL, and Business Intelligence.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="https://github.com/Hdesai96/Hdesai96Portfolio/blob/main/Harshni%20Desai.%20Resume.pdf" target="_blank" class="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition text-center">
+                        <i class="fas fa-file-pdf mr-2"></i> Download Resume
+                    </a>
+                    <a href="https://www.linkedin.com/in/harshni-desai-b57529149/" target="_blank" class="px-6 py-3 bg-white text-slate-700 border border-slate-300 font-medium rounded-lg hover:bg-slate-50 transition text-center">
+                        <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Hdesai96" target="_blank" class="px-6 py-3 bg-slate-800 text-white font-medium rounded-lg hover:bg-slate-900 transition text-center">
+                        <i class="fab fa-github mr-2"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://via.placeholder.com/400x400?text=Harshni+Desai" alt="Harshni Desai" class="rounded-full w-64 h-64 object-cover shadow-xl border-4 border-white ring-2 ring-blue-100">
+            </div>
+        </div>
+    </header>
+
+    <section id="skills" class="py-16 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical Toolkit</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border-t-4 border-blue-500">
+                    <div class="text-blue-500 text-3xl mb-4"><i class="fas fa-database"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Data Analytics</h3>
+                    <p class="text-slate-600">Python (Pandas, NumPy), R, SQL, Excel (Pivot Tables, VLOOKUP)</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border-t-4 border-teal-500">
+                    <div class="text-teal-500 text-3xl mb-4"><i class="fas fa-chart-pie"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Visualization</h3>
+                    <p class="text-slate-600">Power BI (DAX), Tableau, Matplotlib, Seaborn</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border-t-4 border-indigo-500">
+                    <div class="text-indigo-500 text-3xl mb-4"><i class="fas fa-server"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Engineering & Strategy</h3>
+                    <p class="text-slate-600">MySQL, ETL Pipelines, Data Warehousing, Sustainability Audits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">Featured Projects</h2>
+            <p class="text-center text-slate-500 mb-12 max-w-2xl mx-auto">A selection of data cleaning, exploration, and predictive modeling projects.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-1 transition duration-300 border border-slate-100">
+                    <div class="h-48 bg-slate-200 flex items-center justify-center text-slate-400">
+                        <i class="fas fa-home text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">MySQL</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">Data Cleaning</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Housing Data Cleaner</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Cleaned a complex housing dataset to remove inconsistencies and handle missing values, ensuring 100% data integrity for downstream pricing analysis.
+                        </p>
+                        <a href="https://github.com/Hdesai96/Hdesai96Portfolio/blob/main/Data%20Cleaning%20on%20Housing%20Data%20using%20MySQL.txt" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">View Code <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-1 transition duration-300 border border-slate-100">
+                    <div class="h-48 bg-slate-200 flex items-center justify-center text-slate-400">
+                        <i class="fas fa-shopping-cart text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">EDA</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Instacart Market Analysis</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Analyzed 3M+ grocery orders using Python/Jupyter to uncover purchasing trends by time of day and user behavior patterns.
+                        </p>
+                        <a href="https://github.com/Hdesai96/instacart/blob/main/instacart%20(1).ipynb" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">View Analysis <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-1 transition duration-300 border border-slate-100">
+                    <div class="h-48 bg-slate-200 flex items-center justify-center text-slate-400">
+                        <i class="fas fa-graduation-cap text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Machine Learning</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2.5 py-0.5 rounded">Education</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Student Grade Predictor</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Developed a predictive model to forecast student grades based on demographics and study habits, aiding in early intervention strategies.
+                        </p>
+                        <a href="https://github.com/Hdesai96/Hdesai96Portfolio/blob/main/Student_Performance_Data_FinalProject.ipynb" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-sm">View Notebook <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="mb-4 text-slate-400">© 2025 Harshni Desai. Built for impact.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.linkedin.com/in/harshni-desai-b57529149/" class="hover:text-blue-400 transition"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://github.com/Hdesai96" class="hover:text-white transition"><i class="fab fa-github fa-lg"></i></a>
+                <a href="mailto:desai.harshni.d@gmail.com" class="hover:text-red-400 transition"><i class="fas fa-envelope fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
