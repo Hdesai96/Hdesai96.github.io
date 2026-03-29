@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --navy: #0a1628;
-            --navy-mid: #112240;
-            --teal: #00b4d8;
-            --teal-light: #90e0ef;
-            --gold: #f4a261;
-            --white: #f0f4f8;
-            --muted: #8892a4;
-            --card-bg: #112240;
-            --border: rgba(0,180,216,0.15);
+            --navy: #0d0d12;
+            --navy-mid: #16161f;
+            --teal: #a78bfa;
+            --teal-light: #ddd6fe;
+            --gold: #fb923c;
+            --white: #f9fafb;
+            --muted: #9ca3af;
+            --card-bg: #16161f;
+            --border: rgba(167,139,250,0.15);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -273,16 +273,16 @@
         }
 
         .project-visual.kafka {
-            background: linear-gradient(135deg, #0d2137 0%, #0a3d5c 100%);
+            background: linear-gradient(135deg, #13101e 0%, #1e1535 100%);
         }
         .project-visual.housing {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            background: linear-gradient(135deg, #16161f 0%, #1e1b2e 100%);
         }
         .project-visual.instacart {
-            background: linear-gradient(135deg, #1a2a1a 0%, #0d2b0d 100%);
+            background: linear-gradient(135deg, #16161f 0%, #1e1b2e 100%);
         }
         .project-visual.student {
-            background: linear-gradient(135deg, #2a1a1a 0%, #2b0d0d 100%);
+            background: linear-gradient(135deg, #1e1535 0%, #16161f 100%);
         }
 
         /* Pipeline visual for Kafka */
@@ -292,8 +292,8 @@
         }
 
         .pipe-node {
-            background: rgba(0,180,216,0.15);
-            border: 1px solid rgba(0,180,216,0.4);
+            background: rgba(167,139,250,0.15);
+            border: 1px solid rgba(167,139,250,0.4);
             border-radius: 6px; padding: 6px 10px;
             font-size: 0.6rem; font-weight: 600;
             color: var(--teal); letter-spacing: 0.5px;
@@ -454,7 +454,7 @@
                 <span class="hero-tag">Data Engineer & Analyst</span>
                 <h1>Hi, I'm <span>Harshni</span><br>Desai</h1>
                 <p class="hero-subtitle">
-                    I build real-time data pipelines and transform raw data into actionable insights. Master's student at Texas State University — Graduate Merit Fellow.
+                    I build real-time data pipelines and turn raw data into decisions that matter. Currently completing my Master's in Data Analytics & Information Systems at Texas State University, Graduate Merit Fellow. Actively seeking full-time roles in data engineering and analytics, available with OPT upon graduation.
                 </p>
                 <div class="hero-btns">
                     <a href="https://github.com/Hdesai96/Hdesai96.github.io/blob/main/Harshni%20Desai.pdf" target="_blank" class="btn-primary">
@@ -477,7 +477,7 @@
     <div class="stats-bar">
         <div class="stats-inner">
             <div class="stat">
-                <span class="stat-num">4+</span>
+                <span class="stat-num">5+</span>
                 <span class="stat-label">Projects Built</span>
             </div>
             <div class="stat">
@@ -488,6 +488,10 @@
                 <span class="stat-num">5+</span>
                 <span class="stat-label">AWS Services</span>
             </div>
+            <div class="stat">
+                <span class="stat-num">3M+</span>
+                <span class="stat-label">Data Points Processed</span>
+            </div>
         </div>
     </div>
 
@@ -496,7 +500,7 @@
         <div class="section-inner">
             <p class="section-label reveal">Capabilities</p>
             <h2 class="section-title reveal">Technical Toolkit</h2>
-            <p class="section-sub reveal">A full-stack data skill set spanning engineering, analytics, and cloud infrastructure.</p>
+            <p class="section-sub reveal">End-to-end skills across data engineering, analytics, and cloud. Built through hands-on projects, not just coursework.</p>
 
             <div class="skills-grid">
                 <div class="skill-card reveal">
@@ -537,8 +541,8 @@
     <section id="projects">
         <div class="section-inner">
             <p class="section-label reveal">Portfolio</p>
-            <h2 class="section-title reveal">Featured Projects</h2>
-            <p class="section-sub reveal">Real-world data engineering and analytics projects built from scratch.</p>
+            <h2 class="section-title reveal">Applied Work & Projects</h2>
+            <p class="section-sub reveal">These aren't classroom exercises. Each project was scoped, built, and shipped independently. The same work you'd expect from a junior data engineer or analyst on your team.</p>
 
             <div class="projects-grid">
 
@@ -570,7 +574,7 @@
                         </div>
                         <h3>Real-Time Stock Market Data Pipeline</h3>
                         <p>
-                            Built a production-grade end-to-end streaming pipeline hosted on AWS EC2. A Python Kafka Producer streams live stock market data at 1 message/second to a Kafka topic, consumed and written as JSON files to an S3 data lake. AWS Glue Crawler auto-detects schema, enabling SQL analytics via Amazon Athena.
+                            Designed and deployed a production-grade streaming pipeline that ingests live stock market data at 1 message/second via a Python Kafka producer. Data lands in an S3 data lake as JSON, with AWS Glue auto-detecting schema changes and Amazon Athena enabling real-time SQL analytics on top. Built end-to-end on EC2, covering the full stack a data engineer would own at a fintech or trading firm.
                         </p>
                         <a href="https://github.com/Hdesai96/stock-market-kafka-pipeline" target="_blank" class="project-link">
                             View Project <i class="fas fa-arrow-right"></i>
@@ -581,7 +585,7 @@
                 <!-- HOUSING -->
                 <div class="project-card reveal">
                     <div class="project-visual housing">
-                        <i class="fas fa-home" style="color: #60a5fa; opacity:0.7"></i>
+                        <i class="fas fa-home" style="color: #a78bfa; opacity:0.7"></i>
                     </div>
                     <div class="project-body">
                         <div class="project-tags">
@@ -589,7 +593,7 @@
                             <span class="tag tag-gray">Data Cleaning</span>
                         </div>
                         <h3>Housing Data Cleaner</h3>
-                        <p>Cleaned a complex housing dataset to remove inconsistencies and handle missing values, ensuring 100% data integrity for downstream pricing analysis.</p>
+                        <p>Took a messy, inconsistent housing dataset and engineered it into a clean, analysis-ready relational format. Resolved duplicate records, standardized schemas, and handled missing values to achieve 100% data integrity. The unglamorous but business-critical work that determines whether downstream analysis is trustworthy or garbage.</p>
                         <a href="https://github.com/Hdesai96/Hdesai96Portfolio/blob/main/Data%20Cleaning%20on%20Housing%20Data%20using%20MySQL.txt" target="_blank" class="project-link">
                             View Code <i class="fas fa-arrow-right"></i>
                         </a>
@@ -600,14 +604,14 @@
                 <div class="project-card reveal">
                     <div class="project-visual instacart" style="flex-direction:column; gap:10px; padding:20px;">
                         <div style="display:flex; gap:8px; align-items:flex-end;">
-                            <div style="width:18px; background:#4ade80; border-radius:3px 3px 0 0; height:40px; opacity:0.8;"></div>
-                            <div style="width:18px; background:#4ade80; border-radius:3px 3px 0 0; height:60px; opacity:0.8;"></div>
-                            <div style="width:18px; background:#4ade80; border-radius:3px 3px 0 0; height:30px; opacity:0.8;"></div>
-                            <div style="width:18px; background:#4ade80; border-radius:3px 3px 0 0; height:75px; opacity:0.8;"></div>
-                            <div style="width:18px; background:#4ade80; border-radius:3px 3px 0 0; height:50px; opacity:0.8;"></div>
-                            <div style="width:18px; background:#4ade80; border-radius:3px 3px 0 0; height:65px; opacity:0.8;"></div>
+                            <div style="width:18px; background:#a78bfa; border-radius:3px 3px 0 0; height:40px; opacity:0.8;"></div>
+                            <div style="width:18px; background:#a78bfa; border-radius:3px 3px 0 0; height:60px; opacity:0.8;"></div>
+                            <div style="width:18px; background:#a78bfa; border-radius:3px 3px 0 0; height:30px; opacity:0.8;"></div>
+                            <div style="width:18px; background:#a78bfa; border-radius:3px 3px 0 0; height:75px; opacity:0.8;"></div>
+                            <div style="width:18px; background:#a78bfa; border-radius:3px 3px 0 0; height:50px; opacity:0.8;"></div>
+                            <div style="width:18px; background:#a78bfa; border-radius:3px 3px 0 0; height:65px; opacity:0.8;"></div>
                         </div>
-                        <div style="font-size:0.65rem; color:#4ade80; letter-spacing:1px; opacity:0.7; text-transform:uppercase;">3M+ Orders Analyzed</div>
+                        <div style="font-size:0.65rem; color:#a78bfa; letter-spacing:1px; opacity:0.7; text-transform:uppercase;">3M+ Orders Analyzed</div>
                     </div>
                     <div class="project-body">
                         <div class="project-tags">
@@ -615,7 +619,7 @@
                             <span class="tag tag-gray">EDA</span>
                         </div>
                         <h3>Instacart Market Analysis</h3>
-                        <p>Analyzed 3M+ grocery orders using Python/Jupyter to uncover purchasing trends by time of day and user behavior patterns.</p>
+                        <p>Analyzed 3M+ grocery orders to surface patterns in customer purchasing behavior, including peak ordering windows, top reorder categories, and basket composition trends. The kind of analysis a retail data analyst would deliver to a merchandising or marketing team to drive inventory and promotional decisions.</p>
                         <a href="https://github.com/Hdesai96/instacart/blob/main/instacart%20(1).ipynb" target="_blank" class="project-link">
                             View Analysis <i class="fas fa-arrow-right"></i>
                         </a>
@@ -624,15 +628,15 @@
 
                 <!-- RETAIL ORDERS -->
                 <div class="project-card reveal">
-                    <div class="project-visual" style="background: linear-gradient(135deg, #1a1a0d 0%, #2b2a0d 100%); height:180px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:12px; padding:20px;">
+                    <div class="project-visual" style="background: linear-gradient(135deg, #16161f 0%, #1e1b2e 100%); height:180px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:12px; padding:20px;">
                         <div style="display:flex; gap:6px; align-items:center;">
-                            <div style="background:rgba(251,191,36,0.15); border:1px solid rgba(251,191,36,0.4); border-radius:6px; padding:6px 10px; font-size:0.6rem; color:#fbbf24; font-weight:600;">Extract</div>
-                            <div style="color:#fbbf24; font-size:0.7rem; opacity:0.5;">→</div>
-                            <div style="background:rgba(251,191,36,0.15); border:1px solid rgba(251,191,36,0.4); border-radius:6px; padding:6px 10px; font-size:0.6rem; color:#fbbf24; font-weight:600;">Transform</div>
-                            <div style="color:#fbbf24; font-size:0.7rem; opacity:0.5;">→</div>
-                            <div style="background:rgba(251,191,36,0.15); border:1px solid rgba(251,191,36,0.4); border-radius:6px; padding:6px 10px; font-size:0.6rem; color:#fbbf24; font-weight:600;">Load</div>
+                            <div style="background:rgba(251,146,60,0.15); border:1px solid rgba(251,146,60,0.4); border-radius:6px; padding:6px 10px; font-size:0.6rem; color:#fb923c; font-weight:600;">Extract</div>
+                            <div style="color:#fb923c; font-size:0.7rem; opacity:0.5;">→</div>
+                            <div style="background:rgba(251,146,60,0.15); border:1px solid rgba(251,146,60,0.4); border-radius:6px; padding:6px 10px; font-size:0.6rem; color:#fb923c; font-weight:600;">Transform</div>
+                            <div style="color:#fb923c; font-size:0.7rem; opacity:0.5;">→</div>
+                            <div style="background:rgba(251,146,60,0.15); border:1px solid rgba(251,146,60,0.4); border-radius:6px; padding:6px 10px; font-size:0.6rem; color:#fb923c; font-weight:600;">Load</div>
                         </div>
-                        <div style="font-size:0.65rem; color:#fbbf24; letter-spacing:1px; opacity:0.7; text-transform:uppercase;">9,994 Orders Processed</div>
+                        <div style="font-size:0.65rem; color:#fb923c; letter-spacing:1px; opacity:0.7; text-transform:uppercase;">9,994 Orders Processed</div>
                     </div>
                     <div class="project-body">
                         <div class="project-tags">
@@ -641,7 +645,7 @@
                             <span class="tag tag-gray">ETL</span>
                         </div>
                         <h3>Retail Order Analytics</h3>
-                        <p>End-to-end ETL pipeline processing 9,994 retail orders — cleaned with Pandas, loaded into MySQL, and analyzed with advanced SQL including window functions, CTEs, and month-over-month growth analysis.</p>
+                        <p>Built a full ETL pipeline across 9,994 retail orders: extracted and cleaned raw transactional data with Pandas, loaded into MySQL, and queried with advanced SQL: window functions, CTEs, and month-over-month growth analysis. Delivered structured reporting on sales trends from raw data to insight, end-to-end.</p>
                         <a href="https://github.com/Hdesai96/retail-orders-analytics" target="_blank" class="project-link">
                             View Project <i class="fas fa-arrow-right"></i>
                         </a>
@@ -651,7 +655,7 @@
                 <!-- STUDENT -->
                 <div class="project-card reveal">
                     <div class="project-visual student">
-                        <i class="fas fa-graduation-cap" style="color: #f87171; opacity:0.7"></i>
+                        <i class="fas fa-graduation-cap" style="color: #fb923c; opacity:0.7"></i>
                     </div>
                     <div class="project-body">
                         <div class="project-tags">
@@ -659,7 +663,7 @@
                             <span class="tag tag-gray">Education</span>
                         </div>
                         <h3>Student Grade Predictor</h3>
-                        <p>Developed a Random Forest model to forecast student grades with 89% accuracy based on demographics and study habits, aiding early intervention.</p>
+                        <p>Built a supervised ML model predicting student academic outcomes with 89% accuracy using a Random Forest classifier trained on demographic and behavioral features. Applied the full ML workflow: feature engineering, cross-validation, and hyperparameter tuning, in a domain where early prediction directly supports student intervention and success.</p>
                         <a href="https://github.com/Hdesai96/Hdesai96Portfolio/blob/main/Student_Performance_Data_FinalProject.ipynb" target="_blank" class="project-link">
                             View Notebook <i class="fas fa-arrow-right"></i>
                         </a>
@@ -676,7 +680,7 @@
             <p class="section-label reveal" style="text-align:center">Get In Touch</p>
             <h2 class="section-title reveal" style="text-align:center">Let's Connect</h2>
             <p class="section-sub reveal" style="margin: 0 auto 0; text-align:center">
-                Open to data engineering and analytics roles. Feel free to reach out!
+                I'm actively looking for full-time roles in data engineering or analytics, available with OPT upon graduation. Whether you have an open role or just want to connect, I'd love to hear from you.
             </p>
             <div class="contact-links reveal">
                 <a href="mailto:desai.harshni.d@gmail.com" class="contact-link">
