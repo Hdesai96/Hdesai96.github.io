@@ -284,6 +284,9 @@
         .project-visual.student {
             background: linear-gradient(135deg, #1e1535 0%, #16161f 100%);
         }
+        .project-visual.forecaster {
+            background: linear-gradient(135deg, #0f1a2e 0%, #1a2540 100%);
+        }
 
         /* Pipeline visual for Kafka */
         .pipeline {
@@ -477,7 +480,7 @@
     <div class="stats-bar">
         <div class="stats-inner">
             <div class="stat">
-                <span class="stat-num">5+</span>
+                <span class="stat-num">6+</span>
                 <span class="stat-label">Projects Built</span>
             </div>
             <div class="stat">
@@ -666,6 +669,29 @@
                         <p>Built a supervised ML model predicting student academic outcomes with 89% accuracy using a Random Forest classifier trained on demographic and behavioral features. Applied the full ML workflow: feature engineering, cross-validation, and hyperparameter tuning, in a domain where early prediction directly supports student intervention and success.</p>
                         <a href="https://github.com/Hdesai96/Hdesai96Portfolio/blob/main/Student_Performance_Data_FinalProject.ipynb" target="_blank" class="project-link">
                             View Notebook <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-visual forecaster" style="display:flex; align-items:center; justify-content:center; flex-direction:column; gap:14px; padding:20px;">
+                        <i class="fas fa-chart-line" style="font-size:2.2rem; color:#4f8ef7; opacity:0.85"></i>
+                        <div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:center;">
+                            <span style="background:#1e2d45; color:#4f8ef7; padding:3px 10px; border-radius:20px; font-size:0.72rem; font-weight:600;">Prophet</span>
+                            <span style="background:#1e2d45; color:#4f8ef7; padding:3px 10px; border-radius:20px; font-size:0.72rem; font-weight:600;">FastAPI</span>
+                            <span style="background:#1e2d45; color:#4f8ef7; padding:3px 10px; border-radius:20px; font-size:0.72rem; font-weight:600;">Streamlit</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="tag tag-green">Machine Learning</span>
+                            <span class="tag tag-gray">Time Series</span>
+                            <span class="tag tag-gray">Full Stack</span>
+                        </div>
+                        <h3>AI Stock Forecaster</h3>
+                        <p>End-to-end stock price forecasting app using Meta's Prophet time-series model. Fetches historical price data from Tiingo, trains a model on 5 years of daily closes, and returns a 7–90 day forecast with confidence intervals. Built a FastAPI backend and a Streamlit frontend so anyone can use it in a browser — no code required. Deployed on Render.</p>
+                        <a href="https://stock-forecaster-pq9a.onrender.com" target="_blank" class="project-link">
+                            Live Demo <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
